@@ -10,3 +10,10 @@
 Beyonce = User.create(name:"Beyonce", about_me:"the greatest" contact:"beyonce@gmail.com")
 Lebron = User.create(name:"LeBron", about_me:"the greatest" contact:"lebron@gmail.com")
 Sean = User.create(name:"Sean Carter", about_me:"the greatest" contact:"sjay@gmail.com")
+
+HTML = Language.create(name:"HTML")
+Ruby = Language.create(name:"Ruby")
+Javascript = Language.create(name:"Javascript")
+
+Matches.create(match:"Sean", date:"9/1/2021", user_id: Beyonce.id, language_id:"HTML")
+Matches.create(match:"Savannah", date:"9/23/2021", user_id: Lebron.id, language_id:"Ruby")
