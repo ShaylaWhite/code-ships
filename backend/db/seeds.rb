@@ -7,3 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+ beyonce = User.create( email: "beyonce@beyonce.com", password: "pw", name: "B", about_me: "THE GREATEST", contact: "tidal,insta,twitter" , image_url: "https://pyxis.nymag.com/v1/imgs/b63/a15/54ee36134b1b11f3ced6fbd587c7efc9b7-06-beyonce-2.rsquare.w700.jpg" )
+
+
+ jayz = Match.create(match: "JayZ", date: "1/2/2002")
+
+ html = Language.create(name: "Html", user_id: beyonce.id, match_id: jayz.id)
